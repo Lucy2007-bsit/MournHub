@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MournHub</title>
+
+<link rel="icon" href="images/MournHub.png">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="topnav fixed-top">
+  <a class="active" href="index.html">Home</a>
+  <a href="content.html">Videos</a>
+  <a href="minigame.html">Games</a>
+  <a href="tutorial.html">Products</a>
+  <a href="about.html">About</a>
+</div>
+
+<!-- MAIN -->
+<div class="container text-center">
+ <font color="orange">
+    <h1 class="title fade-in">Mourn <mark>hub</mark></h1>
+  
+    <p class="fade-in">Graze the Roof (In-Game)</p>
+</font>
+    <!-- AUDIO -->
+    <audio id="bgAudio" controls autoplay>
+        <source src="song1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- LANDING -->
+    <section id="landing" class="fade-in">
+    	<font color="orange">
+        <h2>MADE BY AN IT STUDENT</h2>
+        <p>Hi! I'm Richard and I made this website for fun.</p>
+       </font>
+        <img src="images/profile.jpg" id="profile" class="float">
+
+        <br><br>
+
+        <a href="content.html" class="btn btn-warning btn-lg">Start your journey!</a>
+    </section>
+   <font color="orange">
+    <p class="mt-5">© 2026 MournHub. All rights reserved.</p>
+   </font>
+</div>
+
+<!-- FOOTER -->
+<footer class="fixed-bottom text-center">
+    <a href="https://www.facebook.com/share/1bCFXyBHtZ/" target="_blank">
+        <i class="fa-brands fa-square-facebook"></i>
+    </a>
+
+    <a href="https://discord.com/users/1478770586129006632" target="_blank">
+        <i class="fa-brands fa-discord"></i>
+    </a>
+
+    <a href="https://www.youtube.com/channel/UCpZYGjQcbAHruNm62OW1xJA" target="_blank">
+        <i class="fa-brands fa-square-youtube"></i>
+    </a>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://kit.fontawesome.com/1d52df81a6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+<script>
+const audio = document.getElementById("bgAudio");
+audio.loop = true;
+</script>
+
+</body>
+</html>

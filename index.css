@@ -1,0 +1,112 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #000000, #111111, #1a1a1a);
+    background-size: 600% 600%;
+    animation: bgMove 15s ease infinite;
+    color: #ffA500;
+}
+
+/* Background animation */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== NAVBAR ===== */
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.topnav a {
+    color: #ffA500;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background: #ffA500;
+    color: black;
+    box-shadow: 0 0 10px #ffA500;
+}
+
+/* ===== CONTENT ===== */
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* ===== PROFILE ===== */
+#profile {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+#profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffA500;
+}
+
+/* ===== FLOAT ===== */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===== BUTTON ===== */
+button, .btn {
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffA500;
+}
+
+/* ===== FADE-IN ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s ease;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: rgba(255,165,0,0.9);
+    padding: 10px;
+}
+
+i {
+    font-size: 25px;
+    color: black;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: white;
+    transform: scale(1.2);
+}
